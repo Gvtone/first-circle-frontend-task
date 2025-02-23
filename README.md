@@ -8,7 +8,7 @@ For security reasons, a .env file is needed to ensure correct output of the util
 
 # Setting Up
 
-1. This is a React application which uses the Vite for faster development. Due to this, Node.js is required to run this project. If you haven't install Node.js yet, you can install it [here] (https://nodejs.org/en).
+1. This is a React application which uses the Vite for faster development. Due to this, Node.js is required to run this project. If you haven't install Node.js yet, you can install it [here](https://nodejs.org/en).
 2. After installation, please clone this repository into your local machine.
 3. Libraries needs to be installed to run the app. You can do this by running:
    ```
