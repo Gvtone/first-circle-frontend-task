@@ -1,50 +1,28 @@
-# React + TypeScript + Vite
+# First Circle Frontend Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The objective of this task is to create a simple utility that will call an API 15 times. The information from those calls should be displayed in the page via a table. The application utilizes the API Ninja to retrieve random user information. The information that have been fetched can be downloaded in a JSON or CSV format. There is also an option to print it in the console.
 
-Currently, two official plugins are available:
+## Environment Variables
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+For security reasons, a .env file is needed to ensure correct output of the utility. This will be sent in the email.
 
-## Expanding the ESLint configuration
+# Setting Up
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. This is a React application which uses the Vite for faster development. Due to this, Node.js is required to run this project. If you haven't install Node.js yet, you can install it [here] (https://nodejs.org/en).
+2. After installation, please clone this repository into your local machine.
+3. Libraries needs to be installed to run the app. You can do this by running:
+   ```
+   npm install
+   ```
+4. After installing the libraries, you can now run the application by running this command:
+   ```
+   npm run dev
+   ```
+5. Click on the link provided and you may now test the application.
 
-- Configure the top-level `parserOptions` property like this:
+> **Note**
+> Please make sure that the .env is set properly before running so that the application will run correctly.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Usage
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+The application have four inactable buttons. The first one is for fetching for a new set of data; when visiting the page, it will fetch data on it's own and display it in the table. The second button is used to print the information gathered into the console. The third and fourth button are used for downloading the information into JSON and CSV repectively.
