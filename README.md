@@ -25,4 +25,4 @@ For security reasons, a .env file is needed to ensure correct output of the util
 
 ## Usage
 
-The application have four inactable buttons. The first one is for fetching for a new set of data; when visiting the page, it will fetch data on it's own and display it in the table. The second button is used to print the information gathered into the console. The third and fourth button are used for downloading the information into JSON and CSV repectively.
+The application have four interactable buttons. The first one is for fetching for a new set of data; when visiting the page, it will fetch data on it's own and display it in the table. The second button is used to print the information gathered into the console. The third and fourth button are used for downloading the information into JSON and CSV repectively.
